@@ -1,3 +1,4 @@
+<<<<<<< HEAD:sales-commission-calculator-main/README.md
 # sales-commission-calculator
 Полностью задокументированный Python-проект: расчёт месячной выплаты продавцу с учётом объёмов продаж, ступенчатой комиссии и аванса. Включает псевдокод, блок-схемы, таблицы ВОВ и анализ потока данных.
 
@@ -34,3 +35,5 @@
 - [Таблица ставок](docs/commission-table.png)
 - [Иерархия функций](docs/hierarchy.png)
 - [Псевдокод](docs/pseudocode.png)
+=======
+>>>>>>> cf65d91 (Create README.md):README.md
