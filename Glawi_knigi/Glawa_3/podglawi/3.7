@@ -1,0 +1,59 @@
+3.7 Черепашья графика: определение состояния черепахи
+
+Определение позиции черепахи
+if turtle.xcor() > 290 or turtle.ycor() > 349:
+    turtle.goto(0, 0)
+
+
+Определние углового направления черепахи
+if turtle.setheading() >= 90 and turtle.setheading() <= 270:
+    turtle.setheading(180)
+
+
+Определние положения пера над холстом
+#turtle.isdown() - всегда True
+if turtle.isdown():
+    turtle.penup()
+
+if not(turtle.isdown()):
+    turtle.pendown()
+
+
+Определение видимости черепахи
+#turtle.isvisible() является True
+if turtle.isvisible():
+    turtle.hideturtle()
+
+Определение текущего цвета
+turtle.pencolor() - по дефолту black
+if turtle.pencolor() == 'red':
+    turtle.pencolor('blue')
+
+
+turtle.fillcolor() - по дефолту black
+if turtle.fillcolor() == 'blue':
+    turtle.pencolor('white')
+
+
+turtle.bgcolor() - по дефолту white
+if turtle.bgcolor() == 'white':
+    turtle.fillcolor('gray')
+
+
+Определение размера пера
+turtle.pensize() - по дефолту 1
+if turtle.pensize() < 3:
+    turtle.pensize(3)
+
+
+Определение скорости анимации черепахи
+turtle.speed() - по дефолту 3
+if turtle.speed() > 0:
+    turtle.speed(0)
+
+if turtle.speed() == 0:
+    turtle.pencolor('red')
+elif turtle.speed() > 5:
+    turtle.pencolor('blue')
+else:
+    turtle.pencolor('green')
