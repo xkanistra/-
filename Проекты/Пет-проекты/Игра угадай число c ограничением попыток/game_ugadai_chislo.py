@@ -7,23 +7,22 @@ SECRET = 15
 a = input("Нажмите <Enter> чтобы начать ")
 
 attempt = 0
-if attempt < 5:
-    while attempt < 5:
-        number = int(input("Введите число: "))
 
-        if number == SECRET:
-            print("Поздравляю! Ты угадал!")
-            break
+while attempt < 5:
+    number = int(input("Введите число: "))
 
-        elif number < SECRET:
-            print("Слишком мало!")
+    if number == SECRET:
+        print("Поздравляю! Ты угадал!")
+        break
 
-        elif number > SECRET:
-            print("Слишком много!")
+    elif number < SECRET:
+        print("Слишком мало!")
 
-        attempt += 1
+    elif number > SECRET:
+        print("Слишком много!")
 
-        print(f"~~~~ Количество попыток: {attempt} ~~~~")
+    attempt += 1
+
+    print(f"~~~~ Количество попыток: {attempt} ~~~~")
 
 print("Вы проиграли, попытки закончились")
-
