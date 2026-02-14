@@ -1,0 +1,90 @@
+<mxfile host="65bd71144e">
+    <diagram id="_LaRF1diXCMT__s_YEtE" name="Page-1">
+        <mxGraphModel dx="659" dy="302" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;div style=&quot;color: #cccccc;background-color: #1f1f1f;font-family: Consolas, &#39;Courier New&#39;, monospace;font-weight: normal;font-size: 14px;line-height: 19px;white-space: pre;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Программа &amp;nbsp;вычисляет отпускную цену&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# розничного товара &lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# DISCOUNT_PERCENTAGE - глобальная константа, &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# которая определяет размер скидки&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;DISCOUNT_PERCENTAGE&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #b5cea8;&quot;&gt;0.20&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Главная функция&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;():&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Получить обычную цену товара&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reg_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;get_regular_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Рассчитать отпускную цену&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;sale_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reg_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;-&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;discount&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;reg_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;Отпускная цена состовляет &lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;{&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;sale_price&lt;/span&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;:,.2f}&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;$&#39;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Функция get_regular_price предлагает пользователю&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# ввести обычную цену товара и возвращает &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# это значение&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;get_regular_price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;():&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4ec9b0;&quot;&gt;float&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;input&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #ce9178;&quot;&gt;&#39;Введите обычную цену товара: &#39;&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;))&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;price&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# Функция discount принимает цену товара в качестве аргумента&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# и возвращает сумму скидки,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #6a9955;&quot;&gt;# указанную в DISCOUNT_PERCENTAGE &lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #569cd6;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;discount&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;):&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #c586c0;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #9cdcfe;&quot;&gt;price&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #d4d4d4;&quot;&gt;*&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #4fc1ff;&quot;&gt;DISCOUNT_PERCENTAGE&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;&amp;nbsp; &amp;nbsp;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #dcdcaa;&quot;&gt;main&lt;/span&gt;&lt;span style=&quot;color: #cccccc;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;sketch=1;curveFitting=1;jiggle=2;rounded=1;glass=0;shadow=0;" vertex="1" parent="1">
+                    <mxGeometry x="30" y="20" width="160" height="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=1;fontFamily=Helvetica;fontSize=12;fontColor=default;curved=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;strokeColor=light-dark(#ff0000, #ededed);exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="17">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="191" y="440" as="sourcePoint"/>
+                        <mxPoint x="520" y="410" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="340" y="420"/>
+                            <mxPoint x="360" y="250"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.994;entryY=0.863;entryDx=0;entryDy=0;entryPerimeter=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=light-dark(#ff0000, #ededed);" edge="1" parent="1" source="15" target="2">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="290" y="440"/>
+                            <mxPoint x="290" y="529"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="18" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#0000FF;" edge="1" parent="1" source="12" target="17">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="440" y="550"/>
+                            <mxPoint x="440" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="540" width="270" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#99FF99;" edge="1" parent="1" source="13" target="12">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="370" y="530"/>
+                            <mxPoint x="370" y="550"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="520" width="120" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="430" width="100" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#FF0019;" edge="1" parent="1" source="16" target="19">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#0000FF;" edge="1" parent="1" source="16" target="22">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="220" width="80" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#0000FF;" edge="1" parent="1" source="17" target="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="180"/>
+                            <mxPoint x="100" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" style="edgeStyle=orthogonalEdgeStyle;curved=1;rounded=1;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontFamily=Helvetica;fontSize=12;fontColor=default;strokeColor=#FF0000;" edge="1" parent="1" source="17" target="16">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="230" y="190"/>
+                            <mxPoint x="100" y="190"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="17" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="220" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="160" y="270" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="whiteSpace=wrap;html=1;rounded=1;sketch=1;jiggle=2;curveFitting=1;align=left;verticalAlign=top;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=none;gradientColor=none;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="270" width="160" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
