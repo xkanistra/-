@@ -26,3 +26,11 @@
 ---
 
 ## 📂 Структура проекта
+
+### 📎 Документация
+
+- [Блок-схема](docs/flowchart.png)
+- [Поток данных](docs/data-flow.png)
+- [Таблица ставок](docs/commission-table.png)
+- [Иерархия функций](docs/hierarchy.png)
+- [Псевдокод](docs/pseudocode.png)
