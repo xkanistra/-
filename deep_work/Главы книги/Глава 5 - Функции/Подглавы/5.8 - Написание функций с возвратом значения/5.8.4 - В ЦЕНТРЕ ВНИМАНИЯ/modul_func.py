@@ -61,4 +61,4 @@ def determine_comm_rate(sales):
     # Вернуть ставку комиссионных
     return rate
 
-main()
+main() 
