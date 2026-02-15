@@ -12,6 +12,7 @@
 Каждая функция разобрана в отдельном файле:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Функция main() - commission_rate.drawio
 Функция get_sales() - get_sales.drawio
 Функция get_advanced_pay() - get_advanced_pay.drawio
@@ -19,3 +20,9 @@
 =======
 Функция main() - commission_rate.drawio
 >>>>>>> 58f8ce3 (Пройдены подглавы 5.8 (5.8.3 - 5.8.4).)
+=======
+Функция main() - commission_rate.drawio
+Функция get_sales() - get_sales.drawio
+Функция get_advanced_pay() - get_advanced_pay.drawio
+Функция determine_comm_rate() - determine_comm_rate.drawio
+>>>>>>> f66ddcc (Повторный залив)
