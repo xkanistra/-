@@ -12,3 +12,6 @@
 Каждая функция разобрана в отдельном файле:
 
 Функция main() - commission_rate.drawio
+Функция get_sales() - get_sales.drawio
+Функция get_advanced_pay() - get_advanced_pay.drawio
+Функция determine_comm_rate() - determine_comm_rate.drawio
