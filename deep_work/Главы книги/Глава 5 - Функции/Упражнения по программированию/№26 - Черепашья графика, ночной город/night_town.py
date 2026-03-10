@@ -6,6 +6,10 @@ ANGLE = 90
 X_WIND = 10
 Y_WIND1 = 5
 LENDTH = 5
+
+turtle.hideturtle()
+turtle.speed(0)
+
 def main():
     color_house = 'gray'
     color_window = 'yellow'
@@ -18,8 +22,10 @@ def main():
     get_window.window_print(X_WIND + 20, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
     get_window.window_print(X_WIND + 40, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
     get_window.window_print(X_WIND + 60, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
-    
-    
+    get_window.window_print(X_WIND + 80, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
+    get_window.window_print(X_WIND + 100, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
+    get_window.window_print(X_WIND + 120, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
+    get_window.window_print(X_WIND + 140, Y_WIND1, LENDTH, color_window, pencolor, ANGLE)
     
 def build(color):
     turtle.fillcolor(color)
@@ -60,10 +66,6 @@ def build(color):
     turtle.forward(60)
     turtle.left(ANGLE)
     turtle.end_fill()
-    
-    
-def sky():
-    pass
     
 main()
 turtle.done()
