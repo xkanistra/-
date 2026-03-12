@@ -1,0 +1,22 @@
+<mxfile host="65bd71144e">
+    <diagram id="VsiLmY76Odgpc3zjyoJG" name="Page-1">
+        <mxGraphModel dx="1122" dy="449" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Псевдокод 1 программы:&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="10" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Получить кол-во клипов&lt;/font&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Открыть файл вывода&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Для каждого клипа:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Длительность&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Записать длительность в файл&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Закрыть файл&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="60" width="810" height="240" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;Псевдокод 2 программы:&lt;/font&gt;" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="350" width="810" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;Инициализировать накапливающую переменную total = 0&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Инициализировать переменную-счетчик count = 0&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Открыть файл ввода&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Для каждой строки в файле:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Конвентировать строку в число с плав.точкой(Длительность клипа)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Прибавить его в переменную-счетчик count(Ведет учет кол-ва клипов)&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Показать длительность этого клипа.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Прибавить длительность в накапливающую переменную&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Закрыть файл&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 25px;&quot;&gt;Показать сождержимое накопителя с общей длительностью&lt;/span&gt;&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="20" y="400" width="810" height="430" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
