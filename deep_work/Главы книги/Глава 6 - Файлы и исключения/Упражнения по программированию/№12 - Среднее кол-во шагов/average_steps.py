@@ -13,82 +13,30 @@ NOV = 30
 DEC = 31
 
 def main():
-    total_num = 0
-    total_sum = 0
+    # File open for read
     stepsFile = open('steps.txt', 'r')
-    
-    for line in stepsFile:
-        line = int(stepsFile.readline())
-        total_num += 1
-        total_sum += line
-        if total_num == 31:
-            totalJAN = total_sum
-            averageJAN = totalJAN / JAN
-        elif total_num == 59:
-            totalFEB = total_sum - totalJAN
-            averageFEB = totalFEB / FEB
-        elif total_num == 90:
-            totalMAR = total_sum - totalJAN
-            averageMAR = totalMAR / MAR
-        elif total_num == 120:
-            totalAPR = total_sum - totalMAR
-            averageAPR = totalAPR / APR
-        elif total_num == 151: 
-            totalMAY = total_sum - totalAPR
-            averageMAY = totalMAY / MAY
-        elif total_num == 181:
-            totalJUN = total_sum - totalMAY
-            averageJUN = totalJUN / JUN
-        elif total_num == 212:
-            totalJUL = total_sum - totalJUN
-            averageJUL = totalJUL / JUL
-        elif total_num == 243: 
-            totalAUG = total_sum - totalJUL
-            averageAUG = totalAUG / AUG
-        elif total_num == 273:
-            totalSEP = total_sum - totalAUG
-            averageSEP = totalSEP / SEP
-        elif total_num == 304:
-            totalOCT = total_sum - totalSEP
-            averageOCT = totalOCT / SEP
-        elif total_num == 334:
-            totalNOV = total_sum - totalOCT
-            averageNOV = totalNOV / NOV
-        else:
-            totalDEC = total_sum - totalNOV
-            averageDEC = totalDEC / DEC
-    print(f'Среднее кол-во шагов за Январь: {averageJAN}')
-    print(f'Среднее кол-во шагов за Февраль: {averageFEB}')
-    print(f'Среднее кол-во шагов за Март: {averageMAR}')
-    print(f'Среднее кол-во шагов за Апрель: {averageAPR}')
-    print(f'Среднее кол-во шагов за Май: {averageMAY}')
-    print(f'Среднее кол-во шагов за Июнь: {averageJUN}')
-    print(f'Среднее кол-во шагов за Июль: {averageJUL}')
-    print(f'Среднее кол-во шагов за Август: {averageAUG}')
-    print(f'Среднее кол-во шагов за Сентябрь: {averageSEP}')
-    print(f'Среднее кол-во шагов за Октябрь: {averageOCT}')
-    print(f'Среднее кол-во шагов за Ноябрь: {averageNOV}')
-    print(f'Среднее кол-во шагов за Декабрь: {averageDEC}')
 
+    average_steps(stepsFile, 'январе', JAN)
+    average_steps(stepsFile, 'феврале', FEB)
+    average_steps(stepsFile, 'марте', MAR)
+    average_steps(stepsFile, 'апреле', APR)
+    average_steps(stepsFile, 'мае', MAY)
+    average_steps(stepsFile, 'июне', JUN)
+    average_steps(stepsFile, 'июле', JUL)
+    average_steps(stepsFile, 'августе', AUG)
+    average_steps(stepsFile, 'сентябре', SEP)
+    average_steps(stepsFile, 'октябре', OCT)
+    average_steps(stepsFile, 'ноябре', NOV)
+    average_steps(stepsFile, 'декабре', DEC)
+      
     stepsFile.close()
-    # display()
 
-# Заготовки под будущие функции но сначала проверю код выше без функций
-#def get_JAN()
-#def get_FEB()
-#def get_MAR()
-#def get_APR()
-#def get_MAY()    
-#def get_JUN()
-#def get_JUL()
-#def get_AUG()
-#def get_SEP()
-#def get_OCT()
-#def get_NOV()
-#def get_DEC()
+def average_steps(file, mounth_name, day):
+    sum = 0
+    for count in range(day):
+        sum += int(file.readline())
+    average = sum / day
+    print(f'Среднее кол-во шагов в {mounth_name} составило: {average:.0f}')
 
-#def display():
-
-    
 if __name__ == '__main__':
     main()
