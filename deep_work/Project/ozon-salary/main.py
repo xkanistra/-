@@ -35,17 +35,19 @@ def main():
             total = get_total(pick, shift)
             save_result(data, pick, total)
             save_result2(total)
-            found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
+            # Удалить нужно
+            #found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
 
         elif choise == 2:
             get_read_file()
-            found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
+            # Удалить нужно
+            #found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
 
         else:
             print('Программа завершена')
             break
 
-def choise_mounth(JAN, FEB, MAR, ARP, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC):
+def choise_mounth(JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC):
     print(f'1. Январь')
     print(f'2. Февраль')
     print(f'3. Март')
@@ -95,7 +97,7 @@ def main_menu():
     choise = int(input("Выберите действие: "))
     while choise < 1 or choise > 3:
         print("ОШИБКА. Не допустимое значение")
-        choise = input("Введите допустимое значение(1, 2 или 3): ")
+        choise = int(input("Введите допустимое значение(1, 2 или 3): "))
     return choise
 
 # Расчет премии из пиков

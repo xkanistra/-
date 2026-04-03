@@ -18,7 +18,7 @@ def read_total_rateFile(total, TAX, COEF, FSZN):
             fszn = total * FSZN
             tax = (total - COEF) * TAX
             clear = total - fszn - tax
-            return total
+            return clear
         else:
             clear = total * TAX
             return clear
