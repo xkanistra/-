@@ -18,7 +18,7 @@ class SalaryStorage:
     def _create_file(self):
         with open(HISTORY_FILE, 'w', encoding='utf-8', newline='') as f:
             writer = csv.writer(f, delimiter='|')
-            writer.writerow(['date', 'accepted', 'issued', 'pick_inc', 'shift_inc', 'gross', 'net' ])
+            writer.writerow(['Дата', 'Принято', 'Выдано', 'За пики', 'За смену', 'До налогов', 'После налогов' ])
     
     # Добавляет новую запись в конец файла, форматирует число :.2f, 
     # сохраняет данные из объекта ShiftRecord и рассчитанную чистую ЗП net_salary
@@ -26,9 +26,9 @@ class SalaryStorage:
         with open(HISTORY_FILE, 'a', encoding='utf-8', newline='') as f:
             writer = csv.writer(f, delimiter='|')
             writer.writerow([
-                record.date, record.accepted, record.issued,
+                record.date, record.accepted_picks, record.issued_picks,
                 f'{record.pick_income:.2f}', f'{record.shift_income:.2f}',
-                f'{record.gross:.2f}', f'{record.net:.2f}' 
+                f'{record.gross_salary:.2f}', f'{record.net_salary:.2f}' 
             ])
 
     # Читает файл и преобразует каждую строку в словарь (ключ — название столбца),
