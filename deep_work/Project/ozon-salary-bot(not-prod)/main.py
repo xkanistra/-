@@ -43,7 +43,7 @@ def main():
         
         elif choice == 2:
             for row in storage.get_history(5):
-                 print(f"📅 {row['date']} | Gross: {row['gross']} | Net: {row['net']}")
+                 print(f"📅 {row['Дата']} | До налогов: {row['До налогов']} | После налогов: {row['После налогов']}")
         elif choice == 3:
             m = input("Месяц (01-12): ").zfill(2)
             total = storage.get_month_total(m)

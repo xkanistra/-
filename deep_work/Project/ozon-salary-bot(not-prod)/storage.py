@@ -56,8 +56,8 @@ class SalaryStorage:
             with open(HISTORY_FILE, 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f, delimiter='|')
                 for row in reader:
-                    if row['date'].split('.')[1] == month_num:
-                        total += float(row['gross'])
+                    if row['Дата'].split('.')[1] == month_num:
+                        total += float(row['До налогов'])
         except (FileNotFoundError, ValueError, IndexError):
             pass
         return total
