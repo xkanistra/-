@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 
 def main():
     # Создать список
-    value = [20, 60, 80, 40]
+    value = [100, 400, 300, 600]
 
     slice_labels = ["I квартал", "II квартал", "III квартал", "IV квартал"]
 
