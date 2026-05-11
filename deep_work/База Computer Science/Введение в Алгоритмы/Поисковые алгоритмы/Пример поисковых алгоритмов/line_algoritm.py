@@ -8,8 +8,7 @@ def linear_search(a_list, n):
     for i in a_list:
         if i == n:
             return True
-        else:
-            return False
+    return False
     
     
 
