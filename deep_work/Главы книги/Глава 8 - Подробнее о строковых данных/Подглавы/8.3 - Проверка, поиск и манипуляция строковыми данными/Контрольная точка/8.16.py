@@ -1,0 +1,2 @@
+var = '$'
+print(var.upper())
