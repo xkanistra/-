@@ -1,0 +1,14 @@
+9.2.12 - Влкючение в множество
+
+Работает как list compression
+set1 = set([1, 2, 3, 4, 5])
+set2 = {item for item in set1}
+>>> {1, 2, 3, 4, 5}
+
+set1 = set([1, 2, 3, 4, 5])
+set2 = {item**2 for item in set1}
+>>> {1, 4, 9, 16, 25}
+
+set1 = set([1, 20, 2, 30, 3, 40, 4, 50])
+set2 = {item for item in set1 if item < 10}
+>>> {1, 2, 3, 4} 
