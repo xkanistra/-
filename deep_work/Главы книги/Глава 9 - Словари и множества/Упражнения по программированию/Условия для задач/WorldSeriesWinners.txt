@@ -88,8 +88,8 @@ Oakland Athletics
 Cincinnati Reds
 Minnesota Twins
 Toronto Blue Jays
-World Series Not Played in 1994
 Toronto Blue Jays
+World Series Not Played in 1994
 Atlanta Braves
 New York Yankees
 Florida Marlins
@@ -101,6 +101,7 @@ Anaheim Angels
 Florida Marlins
 Boston Red Sox
 Chicago White Sox
+St. Louis Cardinals
 St. Louis Cardinals
 Boston Red Sox
 Philadelphia Phillies
