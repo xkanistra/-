@@ -85,3 +85,70 @@ def look_up(mycontacts):
 
     # Отыскать его в словаре
     print(mycontacts.get(name, 'Это имя не найдено.'))
+
+# Функция add добавляет новую запись в
+# указанный словарь
+def add(mycontacts):
+    # Получить контактную информацию
+    name = input('Имя: ')
+    phone = input('Телефон: ')
+    email = input('Электронный адрес: ')
+
+    # Создать именованную запись с объектом Contact
+    entry = contact.Contact(name, phone, email)
+
+    # Если имя не существует в словаре, то
+    # добавить его в качестве ключа с имым значением 
+    # в виде объекта
+    if name not in mycontacts:
+        mycontacts[name] = entry
+    else:
+        print('Это имя уже существует.')
+
+# Функция change() позволяет изменять существующую
+# запись в указанном словаре
+def change(mycontacts):
+    # Получить искомое имя
+    name = input('Введите имя: ')
+
+    if name in mycontacts:
+        # Получить новый телефонный номер
+        phone = input('Введите новый телефонный номер: ')
+
+        # Получить новый электронный адрес
+        email = input('Введите новый электронный адрес: ')
+
+        # Создать именованную запись с объектом Contact
+        entry = contact.Contact(name, phone, email)
+
+        # Обновить запись
+        mycontacts[name] = entry
+        print('Информация обновлена.')
+    else:
+        print('Это имя не найдено.')
+
+# Функция delete() позволяет удалять
+# запись из указанного словаря
+def delete(mycontacts):
+    # Получить искомое имя
+    name = input('Введите имя: ')
+
+    # Если имя найдено, то удалить запись
+    if name in mycontacts:
+        del mycontacts[name]
+        print('Запись удалена.')
+    else:
+        print('Это имя не найдено.')
+
+# Функция save_contacts() консервирует указанный 
+# объект и сохраняет его в файле контактов
+def save_contacts(mycontacts):
+    # Открыть файл для записи
+    with open(FILENAME, 'wb') as output_file:
+
+        # Законсервировать словарь и сохранить его
+        pickle.dump(mycontacts, output_file)
+
+# Вызвать главную функцию
+if __name__ == '__main__':
+    main()
