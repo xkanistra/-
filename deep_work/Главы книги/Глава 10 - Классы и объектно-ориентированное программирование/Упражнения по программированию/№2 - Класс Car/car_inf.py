@@ -11,12 +11,12 @@ def main():
 
     car_inf = car.Car(year, make)
 
-    for count in range(5):
+    for _ in range(5):
         car_inf.accelerate()
     print(car_inf.get_speed())
 
-    for count in range(5):
-        car_inf.breake()
+    for _ in range(5):
+        car_inf.brake()
     print(car_inf.get_speed())
 
 if __name__ == '__main__':

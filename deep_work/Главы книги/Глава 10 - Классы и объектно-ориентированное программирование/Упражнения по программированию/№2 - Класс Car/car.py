@@ -20,7 +20,7 @@ class Car:
         self.__speed += 5
 
     # Метод уменьшает скорость автомобиля
-    def breake(self):
+    def brake(self):
         self.__speed -= 5   
 
     # Метод показывает текущую скорость автомобиля
