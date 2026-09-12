@@ -1,4 +1,7 @@
 # Класс Car
+import logging
+
+logger = logging.getLogger(__name__)
 
 class Car:
     # Инициализация атрибутов класса
