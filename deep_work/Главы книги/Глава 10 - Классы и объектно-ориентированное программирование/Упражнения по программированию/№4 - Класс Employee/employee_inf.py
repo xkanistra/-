@@ -1,11 +1,10 @@
-# Программа собирает информацию и сохраняет в файл
+# Программа создает объекты класса Employee
 
-import information
+import employee
 import logging
 
-
-SAVE_FILE = 'Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№3 - Класс Information/inf_file.txt'
-LOGGER_FILE = 'Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№3 - Класс Information/app.log'
+SAVE_FILE = 'Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№4 - Класс Employee/inf_file.txt'
+LOGGER_FILE = 'Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№4 - Класс Employee/app.log'
 
 
 logging.basicConfig(
@@ -15,7 +14,6 @@ logging.basicConfig(
     filemode='a' 
 )
 
-
 def main():
     logging.info('Программа запущенна.')
     again = 'д'
@@ -23,41 +21,40 @@ def main():
 
     logging.debug('Начало цикла while.')
     while again.lower() == 'д':
-        name, age, adress, mobile_number = get_information()
-        inf_obj = add_inforamtion(name, age, adress, mobile_number)
+        name, id_num, department, position = get_information()
+        inf_obj = add_inforamtion(name, id_num, department, position)
         objects.append(inf_obj)
-        save_inf(inf_obj)
         again = input('Желаете продолжить ввод? (д/н): ')
 
     logging.debug('Начало цикла for.')
     for obj in objects:
         print(obj)
-
+    
     logging.info('Цикл упешно вывел данные объектов класса.')
     logging.info('Программа завершенна.')
 
-    
 # Функция для ввода данных
 def get_information():
     logging.info('Функция get_information() успешно запущенна.')
     try:
         name = input('Введите имя: ')
-        age = int(input('Введите возраста: '))
-        adress = input('Введите адрес: ')
-        mobile_number = input('Введите номер телефона: ')
+        id_num = int(input('Введите идентификационный номер: '))
+        department = input('Введите отдел: ')
+        position = input('Введите Должность: ')
         logging.info('Успешный ввод данных.')
-        return name, str(age), adress, mobile_number
+        return name, str(id_num), department, position
     except ValueError:
         logging.error('Пользователь совершил неверный формат ввода.')
         print('Введите корректный возраст в числах.')
 
 
 # Функция создает объекты класса и возвращает их значения
-def add_inforamtion(name, age, adress, mobile_number):
+def add_inforamtion(name, id_num, department, position):
     logging.info('Функция add_inforamtion() успешно запущенна.')
-    inf_obj = information.Information(name, age, adress, mobile_number)
+    inf_obj = employee.Employee(name, id_num, department, position)
     logging.info('Данные успешно переданы в функцию save_inf().')
-    return inf_obj.inf_list()
+    save_inf(inf_obj.inf_list())
+    return inf_obj
 
 
 # Функция сохраняет данные введённые пользователем в файле
@@ -67,5 +64,8 @@ def save_inf(information):
         save_file.write(f'{information}\n')
         logging.info('Данные сохранены успешно\n')
 
+
 if __name__ == '__main__':
     main()
+
+    
