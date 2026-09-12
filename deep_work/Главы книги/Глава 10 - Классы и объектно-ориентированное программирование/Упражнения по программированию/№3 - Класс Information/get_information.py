@@ -1,7 +1,5 @@
 # Программа собирает информацию и сохраняет в файл
 
-from math import log
-
 import information
 import logging
 
