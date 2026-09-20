@@ -1,8 +1,11 @@
 # Программа имитирует викторину для двух игроков
 
 
+from email.contentmanager import raw_data_manager
+
 import question
 import logging
+import random
 
 # Глобальная константа имени файла
 LOGGER_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/app.log"
@@ -51,14 +54,18 @@ def load_item():
 
 def set_obj_list(question_obj, answer_obj):
     obj_list = []
-    while len(obj_list) != 10:
-        for index, q_row in enumerate(question_obj, start=0):
-            q_row = question_obj[index]
-        for index, a_row1 in enumerate(answer_obj, start=0):
-            a_row1 = answer_obj[index]
+    options = []
+    question_answer_list = [[q, a] for q, a in zip(question_obj, answer_obj)]
 
-        print(q_row, a_row1)
-        # quiz = question.Question()
+    for item in answer_obj:
+        decoy_pool = answer_obj.copy()
+        decoy_pool.remove(item)
+        sample_pool = random.sample(decoy_pool, 3)
+        options = item + sample_pool
+        # Продолжи думать как добавить элемент так, чтобы он был либо строкой в списке, либо список в списке
+        ## sample_pool.insert(item, 0)
+
+        print(options)
 
 
 if __name__ == "__main__":
