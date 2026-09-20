@@ -7,7 +7,7 @@ import logging
 # Глобальная константа имени файла
 LOGGER_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/app.log"
 QUESTION_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/question.txt"
-ANSWER_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/question.py"
+ANSWER_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/answer.txt"
 
 
 logging.basicConfig(
@@ -20,7 +20,7 @@ logging.basicConfig(
 
 def main():
     question_obj, answer_obj = load_item()
-    
+    obj_list = set_obj_list(question_obj, answer_obj)
 
 
 # Функция load_item() загружает информацию из файла
@@ -47,6 +47,18 @@ def load_item():
 
     logging.info("Функция завершила работу, возврат к выбору действия в меню.\n")
     return question_obj, answer_obj
+
+
+def set_obj_list(question_obj, answer_obj):
+    obj_list = []
+    while len(obj_list) != 10:
+        for index, q_row in enumerate(question_obj, start=0):
+            q_row = question_obj[index]
+        for index, a_row1 in enumerate(answer_obj, start=0):
+            a_row1 = answer_obj[index]
+
+        print(q_row, a_row1)
+        # quiz = question.Question()
 
 
 if __name__ == "__main__":
