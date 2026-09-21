@@ -25,7 +25,7 @@ class Question:
     def set_answer4(self, answer4):
         self.__answer4 = answer4
 
-    def et_num_true_answer(self, num_true_answer):
+    def set_num_true_answer(self, num_true_answer):
         self.__num_true_answer = num_true_answer
 
     def get_question(self):
@@ -45,3 +45,14 @@ class Question:
 
     def get_num_true_answer(self):
         return self.__num_true_answer
+
+    def get_answer_list(self):
+        answer_list = []
+        answer_list.append(self.__answer1)
+        answer_list.append(self.__answer2)
+        answer_list.append(self.__answer3)
+        answer_list.append(self.__answer4)
+        return answer_list
+
+    def show_true_anser(self, answer):
+        print(f'Верный ответ №{self.__num_true_answer} - {answer}\n')
