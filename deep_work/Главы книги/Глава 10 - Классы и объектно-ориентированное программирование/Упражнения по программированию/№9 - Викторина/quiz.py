@@ -10,7 +10,6 @@ LOGGER_FILE = "Главы книги/Глава 10 - Классы и объек�
 QUESTION_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/question.txt"
 ANSWER_FILE = "Главы книги/Глава 10 - Классы и объектно-ориентированное программирование/Упражнения по программированию/№9 - Викторина/answer.txt"
 
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s -> %(message)s",
@@ -49,6 +48,7 @@ def load_item():
     return question_obj, answer_obj
 
 
+# Написать логгеры и описание для кода
 def set_obj_list(question_obj, answer_obj):
     obj_list = []
     question_answer_list = [[q, a] for q, a in zip(question_obj, answer_obj)]
@@ -75,42 +75,77 @@ def set_obj_list(question_obj, answer_obj):
         )
         obj_list.append(quiz_obj)
 
-        return obj_list
+    return obj_list
 
 
+# Написать логгеры и описание для кода
 def play_quiz(obj_list):
     scores = [0, 0]
     # Тут подумай почему не повторяется цикл а прерывается
-    for index, quiz in enumerate(obj_list, 1):
+    for index, quiz in enumerate(obj_list):
         player = index % 2
+        print(f"Вопрос №{index + 1}")
         if player == 0:
-            print(f"Вопрос игроку {player}:\n{quiz.get_question()}")
+            print(f"Вопрос игроку {player + 1}:\n{quiz.get_question()}")
             print()
             print(f"Варианты ответа:")
             for num, answer in enumerate(quiz.get_answer_list(), start=1):
                 print(f"{num}. {answer}")
-            # Добавть try/except + валидацию ввода
-            choice = int(input(f"Ответ игрока {player}: "))
-            if choice == quiz.get_num_true_answer():
-                quiz.show_true_anser(quiz.get_answer_list()[choice - 1])
-                scores[player] += 1
+
+            try:
+                choice = int(input(f"Ответ игрока {player + 1}: "))
+                while choice < 1 or choice > 4:
+                    choice = int(
+                        input(
+                            f"Игрок {player + 1}, введите представленные номера ответов 1 - 4: "
+                        )
+                    )
+                if choice == quiz.get_num_true_answer():
+                    quiz.show_true_anser(quiz.get_answer_list()[choice - 1])
+                    scores[player] += 1
+                else:
+                    print("Ответ не верный\n")
+            except ValueError:
+                print(
+                    f"Введите допустимый вариант ввода: 1 - 4\n"
+                    f"Вы пропускаете вопрос.\n"
+                )
+
         else:
-            print(f"Вопрос игроку {player}:\n{quiz.get_question()}")
+            print(f"Вопрос игроку {player + 1}:\n{quiz.get_question()}")
             print()
-            print(f"Варианты ответа:")
+            print(f"Варианты ответа:\n")
             for num, answer in enumerate(quiz.get_answer_list(), start=1):
                 print(f"{num}. {answer}")
-            # Добавть try/except + валидацию ввода
-            choice = int(input(f"Ответ игрока {player}: "))
-            if choice == quiz.get_num_true_answer():
-                quiz.show_true_anser(quiz.get_answer_list()[choice - 1])
-                scores[player] += 1
+
+            try:
+                choice = int(input(f"Ответ игрока {player + 1}: "))
+                while choice < 1 or choice > 4:
+                    choice = int(
+                        input(
+                            f"Игрок {player + 1}, введите представленные номера ответов 1 - 4: "
+                        )
+                    )
+                if choice == quiz.get_num_true_answer():
+                    quiz.show_true_anser(quiz.get_answer_list()[choice - 1])
+                    scores[player] += 1
+                else:
+                    print("Ответ не верный\n")
+            except ValueError:
+                print(
+                    f"Введите допустимый вариант ввода: 1 - 4\n"
+                    f"Вы пропускаете вопрос.\n"
+                )
 
     # Тут подумай как вывести победителя
-    #for player_1, player_2 in scores:
-        #print(f'{player_1} : {player_2}')
-        #if player_1 > player_2:
-            #print('Победил игрок 1') 
+    print("Игрок 1\t: Игрок 2")
+    print(f"{scores[0]}\t: {scores[1]}")
+    if scores[0] > scores[1]:
+        print("Победил игрок 1")
+    elif scores[0] == scores[1]:
+        print("Ничья!")
+    else:
+        print("Победил игрок 2")
 
 
 if __name__ == "__main__":
