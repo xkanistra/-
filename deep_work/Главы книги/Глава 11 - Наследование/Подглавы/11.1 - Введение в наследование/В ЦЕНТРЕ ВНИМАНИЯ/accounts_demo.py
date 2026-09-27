@@ -5,22 +5,28 @@ import accounts
 
 
 def main():
-
+    # Получаем номер счета, процентную ставку
+    # и остаток сберегательного счета
     print("Введите данные о сберегательном счета.")
     acct_num = input("Номер счета: ")
     int_rate = float(input("Процентная ставка: "))
     balance = float(input("Остаток: "))
 
+    # Создаем объект SavingsAccount
     savings = accounts.SavingsAccount(acct_num, int_rate, balance)
 
+    # Получаем номер счета, процентную ставку,
+    # остаток сберегательного счета и дату погашения счета CD
     print("Введите данные о счете CD.")
     acct_num = input("Номер счета: ")
     int_rate = float(input("Процентная ставка: "))
     balance = float(input("Остаток: "))
     maturity = input("Дата погашения: ")
 
+    # Создаем объект CD
     cd = accounts.CD(acct_num, int_rate, balance, maturity)
 
+    # Показать введенные данные
     print("Вот введенные Вами данные:")
     print()
     print("Сберегательный счет")
