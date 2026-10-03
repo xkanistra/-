@@ -1,6 +1,5 @@
-ch = '265'
+ch = "265"
 if ch.isalnum():
-    print('Цифра')
+    print("Цифра")
 else:
-    print('Цифр нет')
-
+    print("Цифр нет")

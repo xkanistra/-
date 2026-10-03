@@ -27,44 +27,44 @@ triangle = 2
 hexagone = 3
 
 while True:
-      print("=== Выбери объект чтобы его ===")
-      print("     ~~ Выбор объекта ~~       ")
-      print(f"1. Квадрат\n" f"2. Треугольник\n" f"3. Шестиугольник\n" f"4. Выход")
+    print("=== Выбери объект чтобы его ===")
+    print("     ~~ Выбор объекта ~~       ")
+    print(f"1. Квадрат\n2. Треугольник\n3. Шестиугольник\n4. Выход")
 
-      selection = int(input("Введите номер для операции: "))
+    selection = int(input("Введите номер для операции: "))
 
-      while selection < 1 or selection > 4:
-            print("Ошибка, выберите 1 - 4")
-            selection = int(input("Введите верный номер операции: "))
+    while selection < 1 or selection > 4:
+        print("Ошибка, выберите 1 - 4")
+        selection = int(input("Введите верный номер операции: "))
 
-      if selection == 1:
-            turtle.penup()
-            turtle.goto(X_QUADRATE, Y_QUADRATE)
-            turtle.pendown()
-            for i in range(4):
-                  turtle.forward(SIDE)
-                  turtle.left(QUADRATE_ANGLE)
-            turtle.penup()
-            turtle.home()
-            turtle.pendown()
-            turtle.clearscreen()
+    if selection == 1:
+        turtle.penup()
+        turtle.goto(X_QUADRATE, Y_QUADRATE)
+        turtle.pendown()
+        for i in range(4):
+            turtle.forward(SIDE)
+            turtle.left(QUADRATE_ANGLE)
+        turtle.penup()
+        turtle.home()
+        turtle.pendown()
+        turtle.clearscreen()
 
-      elif selection == 2:
-            turtle.penup()
-            turtle.goto(X_TRIANGLE, Y_TRIANGLE)
-            turtle.pendown()
-            for i in range(3):
-                  turtle.forward(SIDE)
-                  turtle.left(TRIANGLE_ANGLE)
-            turtle.penup()
-            turtle.home()
-            turtle.pendown()
-            turtle.clearscreen()
+    elif selection == 2:
+        turtle.penup()
+        turtle.goto(X_TRIANGLE, Y_TRIANGLE)
+        turtle.pendown()
+        for i in range(3):
+            turtle.forward(SIDE)
+            turtle.left(TRIANGLE_ANGLE)
+        turtle.penup()
+        turtle.home()
+        turtle.pendown()
+        turtle.clearscreen()
 
-      elif selection == 3:
-            turtle.circle(80, steps=8)
-            turtle.clearscreen()
+    elif selection == 3:
+        turtle.circle(80, steps=8)
+        turtle.clearscreen()
 
-      else:
-            print("Спасибо за визит <3")
-            turtle.done()
+    else:
+        print("Спасибо за визит <3")
+        turtle.done()

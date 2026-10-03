@@ -1,5 +1,6 @@
 # Класс Procedure
 
+
 class Procedure:
     def __init__(self, procedure, date, medic, cost):
         self.__procedure = procedure
@@ -20,7 +21,7 @@ class Procedure:
         self.__cost = cost
 
     def __str__(self):
-        return f'Название процедуры: {self.__procedure}\nДата: {self.__date}\nВрач: {self.__medic}\nСтоимость: {self.__cost:,.2f}\n'
+        return f"Название процедуры: {self.__procedure}\nДата: {self.__date}\nВрач: {self.__medic}\nСтоимость: {self.__cost:,.2f}\n"
 
     def inf_list(self):
         information_list = []
@@ -28,4 +29,4 @@ class Procedure:
         information_list.append(self.__date)
         information_list.append(self.__medic)
         information_list.append(str(self.__cost))
-        return ', '.join(information_list)
+        return ", ".join(information_list)

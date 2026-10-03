@@ -1,5 +1,6 @@
 # Создание класса Contact
 
+
 class Contact:
     # Метод __init__ инициализирует атрибуты
     def __init__(self, name, phone, email):
@@ -31,11 +32,11 @@ class Contact:
     def get_email(self):
         return self.__email
 
-    # Метод __str__ возвращает состояние объекта в виде 
+    # Метод __str__ возвращает состояние объекта в виде
     # строкового значения
     def __str__(self):
-        return f'Имя: {self.__name}\n' + \
-               f'Телефон: {self.__phone}\n' + \
-               f'Электронная почта: {self.__email}'
-
-    
+        return (
+            f"Имя: {self.__name}\n"
+            + f"Телефон: {self.__phone}\n"
+            + f"Электронная почта: {self.__email}"
+        )

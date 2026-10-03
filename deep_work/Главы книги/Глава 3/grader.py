@@ -1,11 +1,11 @@
-grade = int(input('Введите кол-во баллов за контрольную: '))
+grade = int(input("Введите кол-во баллов за контрольную: "))
 if grade >= 90:
-    print('A')
+    print("A")
 if grade >= 80:
-    print('B')
+    print("B")
 if grade >= 70:
-    print('C')
+    print("C")
 if grade >= 60:
-    print('D')
+    print("D")
 if grade < 60:
-    print('F')
+    print("F")

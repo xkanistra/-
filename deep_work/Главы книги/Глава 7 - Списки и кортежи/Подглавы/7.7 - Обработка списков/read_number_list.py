@@ -1,8 +1,9 @@
 # Программа считывает чиловые знач из файла в список
 
+
 def main():
     # Открыть файл
-    with open('numberlist.txt', 'r', encoding='utf-8') as file:
+    with open("numberlist.txt", "r", encoding="utf-8") as file:
         # Прочитать список
         numbers = file.readlines()
 
@@ -13,5 +14,7 @@ def main():
         index += 1
 
     print(numbers)
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     main()

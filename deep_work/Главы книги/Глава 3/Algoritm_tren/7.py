@@ -1,5 +1,5 @@
-points = int(input('Введите значение '))
+points = int(input("Введите значение "))
 if points < 9 or points > 51:
-    print('Недопустимые точки')
+    print("Недопустимые точки")
 else:
-    print('Допустимые точки')
+    print("Допустимые точки")

@@ -1,5 +1,6 @@
 # Практика вызова в переменной метода go()
-import car 
+import car
+
 
 def main():
     my_car = car.Car()

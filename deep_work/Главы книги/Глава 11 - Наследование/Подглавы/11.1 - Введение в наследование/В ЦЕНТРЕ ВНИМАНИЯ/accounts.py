@@ -3,7 +3,6 @@
 
 
 class SavingsAccount:
-
     # Инициализируем атрибуты класса, принимающенго
     # номер счета, процентной ставки и баланс
     def __init__(self, account_num, int_rate, bal):
@@ -38,9 +37,8 @@ class SavingsAccount:
 
 
 class CD(SavingsAccount):
-
-    # Инициализируем аргументы для номера счета, процентной ставки, 
-    # баланса и даты погашения 
+    # Инициализируем аргументы для номера счета, процентной ставки,
+    # баланса и даты погашения
     def __init__(self, account_num, int_rate, bal, mat_date):
         # Вызвать метод init надкласса SavingsAccount
         SavingsAccount.__init__(self, account_num, int_rate, bal)

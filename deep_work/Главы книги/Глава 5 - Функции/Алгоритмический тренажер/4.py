@@ -1,5 +1,6 @@
 # Что покажет ниже приведенная программа
 
+
 def main():
     x = 1
     y = 3.4
@@ -7,9 +8,11 @@ def main():
     change_us(x, y)
     print(x, y)
 
+
 def change_us(a, b):
     a = 0
     b = 0
     print(a, b)
+
 
 main()

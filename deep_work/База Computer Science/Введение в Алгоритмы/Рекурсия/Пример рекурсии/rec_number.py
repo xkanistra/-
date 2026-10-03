@@ -12,7 +12,7 @@ def main():
 def not_recursion():
     for i in range(1, MAX_NUM + 1):
         print(i, end=" ")
-    
+
 
 def recursion(num):
     if num == MAX_NUM + 1:

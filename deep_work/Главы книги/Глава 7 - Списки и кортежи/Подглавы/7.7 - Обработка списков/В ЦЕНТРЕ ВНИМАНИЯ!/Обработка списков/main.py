@@ -2,6 +2,7 @@
 from scores import get_scores
 from total import get_total
 
+
 def main():
     # Получить оценки
     scores = get_scores()
@@ -18,7 +19,8 @@ def main():
     # Расчет среднего
     average = total / (len(scores) - 1)
 
-    print(f'Средняя оценка без самой низкой: {average}')
+    print(f"Средняя оценка без самой низкой: {average}")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

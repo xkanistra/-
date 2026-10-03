@@ -9,10 +9,10 @@ angle = 90
 turtle.left(90)
 
 # цикл задает размер повторяясь 100 раз после рисования квадрата
-for long in range(100):  
+for long in range(100):
     start_long -= 3
     # цикл рисует квадрат на каждый цикл увеличения
-    for quadrate in range(4):  
+    for quadrate in range(4):
         turtle.forward(start_long)
         turtle.left(angle)
 

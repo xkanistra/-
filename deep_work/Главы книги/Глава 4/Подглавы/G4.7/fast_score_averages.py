@@ -2,10 +2,10 @@
 # студентов и кол-во оценок в расчете для студента.
 
 # Получить кол-во студентов
-num_students = int(input('Сколько у вас студентов? '))
+num_students = int(input("Сколько у вас студентов? "))
 
 # Получить кол-во оценок в переводе на студента
-num_test_scores = int(input('Сколько оценок в расчете на студента? '))
+num_test_scores = int(input("Сколько оценок в расчете на студента? "))
 
 # Определить средний балл каждого студента.
 for student in range(num_students):
@@ -13,13 +13,13 @@ for student in range(num_students):
     total = 0.0
 
     # Получить номер студента
-    print('Номер студента', student + 1)
-    print('-----------------')
+    print("Номер студента", student + 1)
+    print("-----------------")
 
     # Получить оценки за лабалаторные работы
     for test_num in range(num_test_scores):
-        print(f'Номер лабараторной работы {test_num + 1}', end = '')
-        score = float(input(': '))
+        print(f"Номер лабараторной работы {test_num + 1}", end="")
+        score = float(input(": "))
 
         # Прибавить оценку в накопитель
         total += score
@@ -28,6 +28,5 @@ for student in range(num_students):
     average = total / num_test_scores
 
     # Показать средний балл
-    print(f'Средний балл студента номер {student + 1} '
-          f'состовляет: {average:.1f}')
+    print(f"Средний балл студента номер {student + 1} состовляет: {average:.1f}")
     print()

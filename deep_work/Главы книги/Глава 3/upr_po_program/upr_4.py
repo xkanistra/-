@@ -1,4 +1,4 @@
-number = int(input('Введите число '))
+number = int(input("Введите число "))
 I = 1
 II = 2
 III = 3
@@ -10,24 +10,24 @@ VIII = 8
 IX = 9
 X = 10
 if I == number:
-    print('I')
+    print("I")
 elif II == number:
-    print('II')
+    print("II")
 elif III == number:
-    print('III')
+    print("III")
 elif IV == number:
-    print('IV')
+    print("IV")
 elif V == number:
-    print('V')
+    print("V")
 elif VI == number:
-    print('VI')
+    print("VI")
 elif VII == number:
-    print('VII')
+    print("VII")
 elif VIII == number:
-    print('VIII')
+    print("VIII")
 elif IX == number:
-    print('IX')
+    print("IX")
 elif X == number:
-    print('X')
+    print("X")
 else:
-    print('Ошибка ввода')
+    print("Ошибка ввода")

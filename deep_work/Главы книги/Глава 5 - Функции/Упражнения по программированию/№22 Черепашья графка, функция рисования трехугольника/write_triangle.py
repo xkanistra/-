@@ -11,11 +11,13 @@ Y2 = 0
 X3 = 50
 Y3 = 100
 
+
 def main():
-    triangle(X1, Y1, X2, Y2, 'red', 'black')
-    triangle(X2, Y2, X3, Y3, 'blue', 'black')
-    triangle(X1, Y1, X3, Y3, 'purple', 'black')
-    
+    triangle(X1, Y1, X2, Y2, "red", "black")
+    triangle(X2, Y2, X3, Y3, "blue", "black")
+    triangle(X1, Y1, X3, Y3, "purple", "black")
+
+
 def triangle(startX, startY, endX, endY, color, color1):
     turtle.fillcolor(color1)
     turtle.pendown()
@@ -25,6 +27,7 @@ def triangle(startX, startY, endX, endY, color, color1):
     turtle.goto(endX, endY)
     turtle.pendown()
     turtle.end_fill()
+
 
 main()
 

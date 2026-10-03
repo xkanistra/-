@@ -9,7 +9,7 @@ def main():
     rec_list(sum_list)
     print()
     print(sum_list)
-    
+
 
 def rec_list(a_list):
     if len(a_list) == 1:
@@ -21,5 +21,6 @@ def rec_list(a_list):
         a_list.insert(0, sum)
         print(a_list)
         rec_list(a_list)
+
 
 main()

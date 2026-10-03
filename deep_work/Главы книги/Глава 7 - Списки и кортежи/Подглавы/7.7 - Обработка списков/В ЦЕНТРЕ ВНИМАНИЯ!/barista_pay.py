@@ -1,8 +1,9 @@
 # Программа вычисляет ЗП
-# каждого работника 
+# каждого работника
 
 # Константа для размера списка
 NUM_EMPLOYEES = 6
+
 
 def main():
     # Создать список содержащий кол-во отработанных часов
@@ -10,15 +11,18 @@ def main():
 
     # Получить часы отработанные каждым сотрудником
     for index in range(NUM_EMPLOYEES):
-        hours[index] = float(input(f'Введите число отработанных часов сотрудником {index + 1}: '))
+        hours[index] = float(
+            input(f"Введите число отработанных часов сотрудником {index + 1}: ")
+        )
 
     # Получить почасовую ставку
-    pay_rate = float(input(f'Введите почасовую ставку оплаты: '))
+    pay_rate = float(input(f"Введите почасовую ставку оплаты: "))
 
     # Показать ЗП каждого сотрудника
     for index in range(NUM_EMPLOYEES):
         gross_pay = hours[index] * pay_rate
-        print(f'ЗП сотрудника {index + 1}: {gross_pay:.2f}$')
+        print(f"ЗП сотрудника {index + 1}: {gross_pay:.2f}$")
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

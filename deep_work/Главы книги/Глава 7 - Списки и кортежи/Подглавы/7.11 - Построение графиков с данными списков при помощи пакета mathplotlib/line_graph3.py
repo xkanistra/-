@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def main():
     # Списки координат
     x_coords = [0, 1, 2, 3, 4]
@@ -9,14 +10,14 @@ def main():
     plt.plot(x_coords, y_coords)
 
     # Добавить заголовок
-    plt.title('Образец данных')
+    plt.title("Образец данных")
 
     # Задать границы осей
-    plt.xlim(xmin = -1, xmax = 10)
-    plt.ylim(ymin = -1, ymax = 10)
+    plt.xlim(xmin=-1, xmax=10)
+    plt.ylim(ymin=-1, ymax=10)
     # Добавить описане меток
-    plt.xlabel('Это ось Х')
-    plt.ylabel('Это ось Y')
+    plt.xlabel("Это ось Х")
+    plt.ylabel("Это ось Y")
 
     # Добавить сетку
     plt.grid(True)
@@ -24,5 +25,6 @@ def main():
     # Показать график
     plt.show()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

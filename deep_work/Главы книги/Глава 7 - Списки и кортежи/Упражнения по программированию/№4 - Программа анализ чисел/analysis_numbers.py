@@ -5,7 +5,7 @@ def main():
     numbers_list = add_numbers()
     numbers_list.sort()
     total_value, average_num, min_value, max_value = get_total(numbers_list)
-    
+
     print(numbers_list)
     print(
         f"Наименьшее число: {min_value}\n"

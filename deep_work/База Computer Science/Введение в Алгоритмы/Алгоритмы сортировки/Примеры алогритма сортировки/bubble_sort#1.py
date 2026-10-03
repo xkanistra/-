@@ -1,10 +1,12 @@
 # Первая не оптимальная версия алгоритма
 
+
 def main():
     a_list = [2, 6, 9, 20, 3, 56, 55, 12, 36]
-    print(f'До:\n{a_list}')
+    print(f"До:\n{a_list}")
     sort = buble_sort(a_list)
-    print(f'После:\n{sort}')
+    print(f"После:\n{sort}")
+
 
 # Определение/вызов функции
 def buble_sort(a_list):
@@ -22,5 +24,6 @@ def buble_sort(a_list):
 
     return a_list
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

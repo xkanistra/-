@@ -1,11 +1,14 @@
 # Программа демонстрирует рекурсивную функцию
 
+
 def main():
     message()
 
+
 def message():
-    print('Это рекурсивная функция')
+    print("Это рекурсивная функция")
     message()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

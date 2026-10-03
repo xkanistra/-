@@ -13,6 +13,7 @@ def ask_int(prompt: str) -> int:
         except ValueError:
             print("⚠️ Введите целое число.")
 
+
 # Запрашивает подтверждение «Да/Нет» у пользователя;
 # Нормализует ввод: приводит к нижнему регистру и убирает пробелы (strip().lower()).
 # Принимает несколько вариантов ответа.
@@ -21,6 +22,8 @@ def ask_int(prompt: str) -> int:
 def ask_yes_no(prompt: str) -> bool:
     while True:
         ans = input(prompt).strip().lower()
-        if ans in ('1', 'да', 'y'): return True
-        if ans in ('2', 'нет', 'n'): return False
+        if ans in ("1", "да", "y"):
+            return True
+        if ans in ("2", "нет", "n"):
+            return False
         print("⚠️ Введите 1 (Да) или 2 (Нет)")

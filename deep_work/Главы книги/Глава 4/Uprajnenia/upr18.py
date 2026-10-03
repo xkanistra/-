@@ -13,5 +13,5 @@ for q in range(100):
     turtle.left(angle)
     for l in range(10):
         start_long += 0.5
-        
+
 turtle.done()

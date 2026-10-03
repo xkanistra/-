@@ -1,21 +1,23 @@
 # Эта программа демонстрирует работу ключевого слова None
 
+
 def main():
     # Получить от пользователя два числа
-    num1 = int(input('Введите число: '))
-    num2 = int(input('Введите еще одно число: '))
+    num1 = int(input("Введите число: "))
+    num2 = int(input("Введите еще одно число: "))
 
     # Вызывать функцию devide
     quotient = devide(num1, num2)
-    
+
     # Вывод результата на экран
     if quotient is None:
-        print('Деление на ноль не возможно')
+        print("Деление на ноль не возможно")
     else:
-        print(f'{num1} поделить на {num2} равняется {quotient}')
+        print(f"{num1} поделить на {num2} равняется {quotient}")
+
 
 # Функция devide делит num1 на num2 и возвращает результат
-# Если num2 = 0, то указанная функция 
+# Если num2 = 0, то указанная функция
 # return None
 def devide(num1, num2):
     if num2 == 0:
@@ -23,6 +25,7 @@ def devide(num1, num2):
     else:
         result = num1 / num2
     return result
+
 
 main()
 
@@ -34,4 +37,3 @@ main()
 # оператор is not. Например:
 # if value is not None:
 # Инструкция проверяет что переменная не содержит None.
-

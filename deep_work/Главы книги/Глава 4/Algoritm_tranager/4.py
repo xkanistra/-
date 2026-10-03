@@ -7,7 +7,7 @@ MAX = 10
 total = 0.0
 
 for i in range(MAX):
-    num = float(input('Введите число: '))
+    num = float(input("Введите число: "))
     total += num
 
 print(total)

@@ -1,2 +1,2 @@
-values = 'one$two$three$four$five'
-print(values.split('$'))
+values = "one$two$three$four$five"
+print(values.split("$"))

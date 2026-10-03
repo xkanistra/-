@@ -2,13 +2,15 @@
 
 import turtle
 
-turtle.bgcolor('cyan') #задает размер
+turtle.bgcolor("cyan")  # задает размер
 
 turtle.pensize(5)  # размер пера
 
 turtle.pencolor("blue")  # задает цвет пера
 
-turtle.speed(10)  # скорость пера, от 0 - 10, если 0 то анимации нету, самая медленная скорость 1, самая быстрая 10
+turtle.speed(
+    10
+)  # скорость пера, от 0 - 10, если 0 то анимации нету, самая медленная скорость 1, самая быстрая 10
 
 turtle.setup(1000, 1000)  # устанавливает размер окна с (высота, ширина) размерами
 
@@ -22,7 +24,9 @@ turtle.forward(200)
 turtle.left(90)  # поворачивает влево на (n) угол
 turtle.forward(200)
 
-turtle.setheading(90)  # устанавливает угол направления черепахи от изначальной точки на (n) градусов
+turtle.setheading(
+    90
+)  # устанавливает угол направления черепахи от изначальной точки на (n) градусов
 turtle.forward(200)
 
 turtle.heading()  # показывает текущее угловое значение черепахи
@@ -36,7 +40,7 @@ turtle.forward(100)
 turtle.penup()
 turtle.forward(50)
 
-turtle.dot() # создает точку
+turtle.dot()  # создает точку
 turtle.pendown()
 turtle.forward(100)
 turtle.dot()
@@ -46,7 +50,7 @@ turtle.forward(200)
 turtle.dot()
 turtle.pendown()
 
-turtle.reset() # стирает что нарисованно в окне, не переустанавливает фон
+turtle.reset()  # стирает что нарисованно в окне, не переустанавливает фон
 
 turtle.circle(50)  # рисует круг с (n) радиусом
 turtle.goto(0, 0)  # перемещает перо по осям X и Y
@@ -74,16 +78,18 @@ turtle.begin_fill()
 turtle.circle(50)
 turtle.end_fill()
 
-turtle.clear() # стирает рисунки
+turtle.clear()  # стирает рисунки
 
-turtle.numinput("Заголовок", "Подсказка")  # используется для создания диалогового окна и манипуляция им
+turtle.numinput(
+    "Заголовок", "Подсказка"
+)  # используется для создания диалогового окна и манипуляция им
 turtle.forward(200)
 turtle.fillcolor("red")
 turtle.begin_fill()
 turtle.circle(90)
 turtle.end_fill()
 
-turtle.clearscreen() # делает все настройки черепахи дефолтными
+turtle.clearscreen()  # делает все настройки черепахи дефолтными
 
 # turtle.numinput('заголовок', 'подсказка?', default=x, minval=y, maxval=z). default=x - устанавливает значение которое будет выводится в поле ввода по умолчанию
 # default=x - устанавливает значение которое будет выводится в поле ввода по умолчанию которым является 'x'
@@ -92,10 +98,11 @@ turtle.clearscreen() # делает все настройки черепахи �
 
 turtle.numinput("Число", "введите число от 1 - 10", default=5, minval=1, maxval=10)
 
-name = turtle.textinput("Как вас зовут?", "Введите ФИО")  # textinput() выводит текст в терминале, можно использовать для записи переменных
+name = turtle.textinput(
+    "Как вас зовут?", "Введите ФИО"
+)  # textinput() выводит текст в терминале, можно использовать для записи переменных
 print(name)
 
 turtle.done()  # оставляет графическое окно
 
-turtle.clearscreen() # делает все настройки черепахи дефолтными
-
+turtle.clearscreen()  # делает все настройки черепахи дефолтными

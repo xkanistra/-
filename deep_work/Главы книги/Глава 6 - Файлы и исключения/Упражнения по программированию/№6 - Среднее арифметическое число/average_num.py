@@ -1,5 +1,6 @@
 # Программа выводит среднее арифметическое чисел а файле numbers.txt
 
+
 def main():
     # Накопитель для количества
     total_line = 0
@@ -8,7 +9,7 @@ def main():
     total_numbers = 0
 
     # Открытие файла(шаг 1)
-    numbers_file = open('numbers.txt', 'r')
+    numbers_file = open("numbers.txt", "r")
 
     # Цикл читающий строки
     for line in numbers_file:
@@ -17,10 +18,10 @@ def main():
 
         # Расчет суммы чисел
         total_numbers += file
-        
+
         # Расчет кол-ва чисел
         total_line += 1
-    
+
     # Расчет среднего арифметического
     average = total_numbers / total_line
 
@@ -30,5 +31,6 @@ def main():
     # Закрытие файла(шаг 3)
     numbers_file.close()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

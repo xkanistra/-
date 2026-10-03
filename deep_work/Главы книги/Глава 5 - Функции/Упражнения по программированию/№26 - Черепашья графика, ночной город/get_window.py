@@ -1,11 +1,12 @@
 import turtle
 import random
 
+
 def window_print(x, y, len, color, pencolor, angle):
- 
+
     for i in range(4):
         y += 10
-       
+
         for j in range(1):
             turtle.pencolor(pencolor)
             turtle.fillcolor(color)
@@ -17,7 +18,3 @@ def window_print(x, y, len, color, pencolor, angle):
                 turtle.forward(len)
                 turtle.left(angle)
             turtle.end_fill()
-
-
-
-

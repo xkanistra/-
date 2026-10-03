@@ -2,6 +2,7 @@
 
 import matplotlib.pyplot as plt
 
+
 def main():
     # Создать список
     value = [20, 60, 80, 40]
@@ -9,5 +10,6 @@ def main():
     plt.pie(value)
     plt.show()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

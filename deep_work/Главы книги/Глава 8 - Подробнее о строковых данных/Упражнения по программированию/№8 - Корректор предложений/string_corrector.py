@@ -7,6 +7,7 @@ def main():
     result = corrector_str(user_text)
     print(result)
 
+
 def input_text():
     text = input("Введите ваше сообщение: ")
     return text
@@ -18,8 +19,8 @@ def corrector_str(usr_text):
     raw_text = re.split(r"[.!?]", usr_text)
     text = [s.strip() for s in raw_text if s.strip()]
     for group in text:
-        corrector.append(group.upper()[:1] + group[1:] + '.')
-    return ' '.join(corrector)
+        corrector.append(group.upper()[:1] + group[1:] + ".")
+    return " ".join(corrector)
 
 
 if __name__ == "__main__":

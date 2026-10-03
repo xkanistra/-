@@ -19,6 +19,6 @@ print("Кол-во продаж =", sell)
 # 2.58
 import turtle
 
-radius = turtle.numinput('Введите значение', 'Каков радиус окружности?')
+radius = turtle.numinput("Введите значение", "Каков радиус окружности?")
 turtle.circle(radius)
 turtle.done

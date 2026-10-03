@@ -4,7 +4,7 @@ import turtle
 # Именованный константы
 NUM_CIRCLES = 20
 STARTING_RADIUS = 20
-OFFSET = 10 # Расстояние между кругами
+OFFSET = 10  # Расстояние между кругами
 ANIMATION_SPEED = 0
 
 # Настроить черепаху

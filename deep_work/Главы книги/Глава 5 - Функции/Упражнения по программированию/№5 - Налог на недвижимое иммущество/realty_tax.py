@@ -28,4 +28,5 @@ def get_appraised_tax(appraised_value):
     tax = (appraised_value / 100) * TAX_REALTY
     return tax
 
+
 main()

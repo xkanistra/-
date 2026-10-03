@@ -1,7 +1,7 @@
 # Класс BankAccount имитирует банковский счет
 
-class BankAccount:
 
+class BankAccount:
     # Метод __init__ применяет аргумент
     # с остатком на счете.
     # Он присваивается атрибуту __balance
@@ -15,14 +15,14 @@ class BankAccount:
     def deposit(self, amount):
         self.__balance += amount
 
-    # Метод withdraw снимает сумму 
+    # Метод withdraw снимает сумму
     # со счета
 
     def withdraw(self, amount):
         if self.__balance >= amount:
             self.__balance -= amount
         else:
-            print('Ошибка: Недостаточно средств')
+            print("Ошибка: Недостаточно средств")
 
     # Метод get_balance возвращает
     # остаток средств на счете

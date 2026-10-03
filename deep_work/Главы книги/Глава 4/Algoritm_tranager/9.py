@@ -3,9 +3,8 @@ num = float(input("Введите положительное число от 1 -
 
 while 1 <= num <= 100:
     print(num)
-    num = float(input('Введите еще одно число: '))
+    num = float(input("Введите еще одно число: "))
 
     while num < 1 or num > 100:
-        print('ОШИБКА')
-        num = float(input('Введите допустимое число: '))
-
+        print("ОШИБКА")
+        num = float(input("Введите допустимое число: "))

@@ -1,11 +1,12 @@
 # Программа показывет содержимое файла
 
+
 def main():
     # Имя файла
-    filename = input('Введите имя файла: ')
+    filename = input("Введите имя файла: ")
 
     # Открыть файл
-    infile = open(filename, 'r')
+    infile = open(filename, "r")
 
     # Прочитать содержимое
     contents = infile.read()
@@ -15,5 +16,6 @@ def main():
 
     infile.close()
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

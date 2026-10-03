@@ -37,4 +37,5 @@ def get_total_cal(fat_cal, carb_cal):
     total = fat_cal + carb_cal
     return total
 
+
 main()

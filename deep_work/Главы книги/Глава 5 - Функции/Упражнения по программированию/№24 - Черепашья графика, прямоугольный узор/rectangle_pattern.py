@@ -51,13 +51,13 @@ def drawPattern(lendth, width, color):
         turtle.forward(width)
         turtle.left(ANGLE)
 
-    #turtle.goto(120, 120)
-    #turtle.goto(-20, 120)
-    #turtle.goto(120, -20)
-    #turtle.goto(120, 50)
-    #turtle.goto(-20, 50)
+    # turtle.goto(120, 120)
+    # turtle.goto(-20, 120)
+    # turtle.goto(120, -20)
+    # turtle.goto(120, 50)
+    # turtle.goto(-20, 50)
 
 
-#print(turtle.xcor(), turtle.ycor())
+# print(turtle.xcor(), turtle.ycor())
 main()
 turtle.done()

@@ -12,7 +12,7 @@ def main():
 
 
 def input_text():
-    text = input('Введите текст: ')
+    text = input("Введите текст: ")
     return text
 
 
@@ -26,7 +26,7 @@ def add_list(text):
 
 def binary_search(list_item, text):
     max_count = 0
-    best_ch = ''
+    best_ch = ""
     for ch in set(text):
         left_index = bisect_left(list_item, ch)
         right_index = bisect_right(list_item, ch)
@@ -35,7 +35,7 @@ def binary_search(list_item, text):
             max_count = count
             best_ch = ch
     return best_ch, max_count
-    
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

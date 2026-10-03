@@ -1,5 +1,6 @@
 # Класс Pet
 
+
 class Pet:
     # Инициализация атрибутов класса
     def __init__(self, name, animal_type, age):
@@ -30,4 +31,3 @@ class Pet:
     # Метод возвращает возвраст питомца
     def get_age(self):
         return self.__age
-    

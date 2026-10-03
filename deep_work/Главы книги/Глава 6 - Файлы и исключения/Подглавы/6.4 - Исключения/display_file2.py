@@ -1,12 +1,13 @@
 # Программа показывет содержимое файла и корректно откликается на исключение
 
+
 def main():
     try:
         # Имя файла
-        filename = input('Введите имя файла: ')
+        filename = input("Введите имя файла: ")
 
         # Открыть файл
-        infile = open(filename, 'r')
+        infile = open(filename, "r")
 
         # Прочитать содержимое
         contents = infile.read()
@@ -15,10 +16,10 @@ def main():
         print(contents)
 
         infile.close()
-    
-    except IOError:
-        print('Произошла ошибка при попытке прочитать\n'
-              'файл', filename)
 
-if __name__ == '__main__':
+    except IOError:
+        print("Произошла ошибка при попытке прочитать\nфайл", filename)
+
+
+if __name__ == "__main__":
     main()

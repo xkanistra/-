@@ -12,7 +12,7 @@ total_steps = 0
 over_10000_steps = 0
 # Расчет общего кол-ва шагов циклом
 for day in range(1, 7 + 1):
-    steps = int(input(f'Введите кол-во шагов в тысячах в {day} день: '))
+    steps = int(input(f"Введите кол-во шагов в тысячах в {day} день: "))
     steps *= 1000
     total_steps += steps
     # Добавляем условие при котором если шагов в день больше 10000, то этот день прибавляется к счетчику
@@ -23,14 +23,18 @@ for day in range(1, 7 + 1):
 average_steps = total_steps / 7
 
 # Вывод кол-ва шагов
-print(f'За неделю пройдено: {total_steps} шагов')
-print(f'Среднее кол-во шагов в неделю: {average_steps:.0f}')
-print(f'Кол-во дней в которых шагов >= 10000: {over_10000_steps} ')
+print(f"За неделю пройдено: {total_steps} шагов")
+print(f"Среднее кол-во шагов в неделю: {average_steps:.0f}")
+print(f"Кол-во дней в которых шагов >= 10000: {over_10000_steps} ")
 
 # Условие при котором выводится поздравление
 if total_steps < PURPOSE_STEPS:
-    print(f'К сожалению вы не достигли цели в {PURPOSE_STEPS} шагов\n'
-          f'пройдено {total_steps}/{PURPOSE_STEPS} шагов')
+    print(
+        f"К сожалению вы не достигли цели в {PURPOSE_STEPS} шагов\n"
+        f"пройдено {total_steps}/{PURPOSE_STEPS} шагов"
+    )
 else:
-    print(f'Поздравляю, вы достигли цели по кол-ву шагов в неделю\n'
-          f'пройдено {total_steps}/{PURPOSE_STEPS} шагов')
+    print(
+        f"Поздравляю, вы достигли цели по кол-ву шагов в неделю\n"
+        f"пройдено {total_steps}/{PURPOSE_STEPS} шагов"
+    )

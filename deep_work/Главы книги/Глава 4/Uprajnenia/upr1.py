@@ -3,6 +3,6 @@
 total = 0.0
 
 for i in range(1, 6):
-    num = int(input(f'Введите кол-во ошибок за {i} день: '))
+    num = int(input(f"Введите кол-во ошибок за {i} день: "))
     total += num
 print(total)

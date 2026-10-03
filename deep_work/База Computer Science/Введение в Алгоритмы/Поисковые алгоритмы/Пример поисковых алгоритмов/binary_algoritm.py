@@ -6,6 +6,7 @@ def main():
     search = binary_search(a_list, n)
     print(search)
 
+
 def binary_search(a_list, n):
     first = 0
     last = len(a_list) - 1
@@ -20,5 +21,6 @@ def binary_search(a_list, n):
                 first = mid + 1
     return False
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

@@ -33,7 +33,8 @@ def main():
     obj_list = set_obj_list(question_obj, answer_obj)
     logging.info("Вызов функции play_quiz().")
     play_quiz(obj_list)
-    logging.info('Программа завершена.')
+    logging.info("Программа завершена.")
+
 
 # Функция load_item() загружает информацию из файла
 # и передает её в качестве списка объектов
@@ -161,8 +162,7 @@ def play_quiz(obj_list):
             except ValueError:
                 logging.error(f"Игрок 1 ввел неверный тип данный: {choice}\n")
                 print(
-                    f"Введите допустимый вариант ввода: 1 - 4\n"
-                    f"Вы пропускаете вопрос.\n"
+                    f"Введите допустимый вариант ввода: 1 - 4\nВы пропускаете вопрос.\n"
                 )
 
         else:
@@ -191,34 +191,33 @@ def play_quiz(obj_list):
                 if choice == quiz.get_num_true_answer():
                     quiz.show_true_anser(quiz.get_answer_list()[choice - 1])
                     scores[player] += 1
-                    logging.info(f'Игрок 2 ответил верно, счет : {scores}\n')
+                    logging.info(f"Игрок 2 ответил верно, счет : {scores}\n")
                 else:
                     print("Ответ не верный\n")
                     logging.info(f"Игрок 2 ответил не верно, счет : {scores}\n")
             except ValueError:
                 logging.error(f"Игрок 2 ввел неверный тип данный: {choice}\n")
                 print(
-                    f"Введите допустимый вариант ввода: 1 - 4\n"
-                    f"Вы пропускаете вопрос.\n"
+                    f"Введите допустимый вариант ввода: 1 - 4\nВы пропускаете вопрос.\n"
                 )
 
-    logging.info('Вопросы закончились\nПодсчет итогов.')
+    logging.info("Вопросы закончились\nПодсчет итогов.")
 
-    # Использования созданного списка позволяет легко по индексу 
+    # Использования созданного списка позволяет легко по индексу
     # сравнивать итоги, без вввода дополнительных переменных
     print("Игрок 1\t: Игрок 2")
     print(f"{scores[0]}\t: {scores[1]}")
     if scores[0] > scores[1]:
-        logging.info(f'Победа игрока 1: {scores}')
+        logging.info(f"Победа игрока 1: {scores}")
         print("Победил игрок 1")
     elif scores[0] == scores[1]:
-        logging.info(f'Ничья: {scores}')
+        logging.info(f"Ничья: {scores}")
         print("Ничья!")
     else:
-        logging.info(f'Победа игрока 2: {scores}')
+        logging.info(f"Победа игрока 2: {scores}")
         print("Победил игрок 2")
 
-    logging.info('Функция завершена.\n')
+    logging.info("Функция завершена.\n")
 
 
 if __name__ == "__main__":

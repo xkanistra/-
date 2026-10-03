@@ -1,6 +1,6 @@
 # Класс Car
 class Car:
-        # Инициализировать объекта класса
+    # Инициализировать объекта класса
     def __init__(self, make, model, year):
         self.__make = make
         self.__model = model

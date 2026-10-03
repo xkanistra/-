@@ -2,7 +2,6 @@
 
 
 class Mammal:
-
     # Метод принимает аргумент для
     # вида млекопитающего
     def __init__(self, special):
@@ -23,7 +22,6 @@ class Mammal:
 
 
 class Dog(Mammal):
-
     # Метод __init__ вызывает метод __init__
     # надкласса, передавая 'собака' в качестве вида.
     def __init__(self):
@@ -39,7 +37,6 @@ class Dog(Mammal):
 
 
 class Poodle(Dog):
-
     # Метод __init__ вызывает метод __init__
     # подкласса, передавая 'пудель' в качестве породы.
     def __init__(self):

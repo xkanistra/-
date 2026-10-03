@@ -3,6 +3,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
+
 class Car:
     # Инициализация атрибутов класса
     def __init__(self, year_model, make):
@@ -24,8 +25,8 @@ class Car:
 
     # Метод уменьшает скорость автомобиля
     def brake(self):
-        self.__speed -= 5   
+        self.__speed -= 5
 
     # Метод показывает текущую скорость автомобиля
     def get_speed(self):
-        return f'Текущая скорость автомобиля: {self.__speed}'
+        return f"Текущая скорость автомобиля: {self.__speed}"

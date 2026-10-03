@@ -20,6 +20,7 @@ def main():
     print()
     show_mammal_info(cat)
 
+
 # Функция show_mammal_info принимает объект
 # в качестве аргумента и вызывает свои методы
 # show_special и make_sound
@@ -28,5 +29,5 @@ def show_mammal_info(creature):
     creature.make_sound()
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

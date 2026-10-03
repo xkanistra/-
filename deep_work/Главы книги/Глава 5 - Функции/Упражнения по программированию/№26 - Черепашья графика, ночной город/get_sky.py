@@ -1,6 +1,7 @@
 import turtle
 import random
 
+
 def sky(color_sky, color_star):
     turtle.fillcolor(color_sky)
     turtle.begin_fill()
@@ -12,7 +13,7 @@ def sky(color_sky, color_star):
         turtle.fillcolor(color_star)
         turtle.begin_fill()
         x = random.randrange(0, 200, 10)
-        y= random.randrange(50, 200, 10)
+        y = random.randrange(50, 200, 10)
         turtle.penup()
         turtle.goto(x, y)
         turtle.pendown()

@@ -1,5 +1,6 @@
 # Класс Employee
 
+
 class Employee:
     # Инициализируем атрибуты класса
     def __init__(self, name, id_num, department, position):
@@ -25,7 +26,7 @@ class Employee:
         self.__department = department
 
     def __str__(self):
-        return f'Введённые вами данные\nИмя: {self.__name}\nИденцификационный номер: {self.__id_num}\nОтдел: {self.__department}\nНомер телефона: {self.__position}\n'
+        return f"Введённые вами данные\nИмя: {self.__name}\nИденцификационный номер: {self.__id_num}\nОтдел: {self.__department}\nНомер телефона: {self.__position}\n"
 
     def inf_list(self):
         information_list = []
@@ -33,4 +34,4 @@ class Employee:
         information_list.append(self.__id_num)
         information_list.append(self.__department)
         information_list.append(self.__position)
-        return ', '.join(information_list)
+        return ", ".join(information_list)

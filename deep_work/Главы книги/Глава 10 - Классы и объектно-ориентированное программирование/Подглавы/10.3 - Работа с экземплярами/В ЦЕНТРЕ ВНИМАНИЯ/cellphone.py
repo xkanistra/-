@@ -1,7 +1,7 @@
 # Класс CellPhone содержит данные о сотовом телефона
 
-class CellPhone:
 
+class CellPhone:
     # Метод __init__ инициализирует атрибуты
 
     def __init__(self, manufact, model, price):

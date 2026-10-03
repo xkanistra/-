@@ -4,6 +4,7 @@
 FED_TAX = 0.05
 REG_TAX = 0.025
 
+
 def main():
     shop = float(input("Введите величину покупки: "))
     fed_tax = get_fed_tax(shop)
@@ -18,20 +19,25 @@ def main():
         f"Общая сумма покупки равняется {total_price:.2f} рубелей"
     )
 
+
 def get_fed_tax(shop):
     fed = shop * FED_TAX
     return fed
+
 
 def get_reg_tax(shop):
     reg = shop * REG_TAX
     return reg
 
+
 def get_sum_tax(fed, reg):
     sum_tax = fed + reg
     return sum_tax
 
+
 def get_total_price(total_tax, shop):
     total_price = total_tax + shop
     return total_price
+
 
 main()

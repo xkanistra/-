@@ -13,7 +13,6 @@ def rec_sum(start, end):
     if start == end:
         return start
     return start + end + rec_sum(start + 1, end - 1)
-    
 
 
 main()

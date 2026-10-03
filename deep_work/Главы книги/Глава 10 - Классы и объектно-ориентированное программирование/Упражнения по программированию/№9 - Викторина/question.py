@@ -55,4 +55,4 @@ class Question:
         return answer_list
 
     def show_true_anser(self, answer):
-        print(f'Верный ответ №{self.__num_true_answer} - {answer}\n')
+        print(f"Верный ответ №{self.__num_true_answer} - {answer}\n")

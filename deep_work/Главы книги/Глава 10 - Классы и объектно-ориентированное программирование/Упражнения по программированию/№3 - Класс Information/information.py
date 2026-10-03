@@ -1,5 +1,6 @@
 # Класс Information
 
+
 class Information:
     # Инициализируем атрибуты класса
     def __init__(self, name, age, adress, mobile_number):
@@ -25,7 +26,7 @@ class Information:
         self.__adress = adress
 
     def __str__(self):
-        return f'Введённые вами данные\nИмя: {self.__name}\nВозраст: {self.__age}\nАдрес: {self.__adress}\nНомер телефона: {self.__mobile_number}'
+        return f"Введённые вами данные\nИмя: {self.__name}\nВозраст: {self.__age}\nАдрес: {self.__adress}\nНомер телефона: {self.__mobile_number}"
 
     def inf_list(self):
         information_list = []
@@ -33,4 +34,4 @@ class Information:
         information_list.append(self.__age)
         information_list.append(self.__adress)
         information_list.append(self.__mobile_number)
-        return ', '.join(information_list)
+        return ", ".join(information_list)

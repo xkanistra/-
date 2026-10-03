@@ -1,5 +1,6 @@
 # Класс Patient
 
+
 class Patient:
     def __init__(self, full_name, full_adress, mobile_number, emergency_contact):
         self.__full_name = full_name
@@ -20,7 +21,7 @@ class Patient:
         self.__emergency_contact = emergency_contact
 
     def __str__(self):
-        return f'ФИО: {self.__full_name}\nПолный адресс: {self.__full_adress}\nТелефонный номер: {self.__mobile_number}\nКонтакты доверенного лица: {self.__emergency_contact}\n'
+        return f"ФИО: {self.__full_name}\nПолный адресс: {self.__full_adress}\nТелефонный номер: {self.__mobile_number}\nКонтакты доверенного лица: {self.__emergency_contact}\n"
 
     def inf_list(self):
         information_list = []
@@ -28,4 +29,4 @@ class Patient:
         information_list.append(self.__full_adress)
         information_list.append(self.__mobile_number)
         information_list.append(self.__emergency_contact)
-        return ', '.join(information_list)
+        return ", ".join(information_list)

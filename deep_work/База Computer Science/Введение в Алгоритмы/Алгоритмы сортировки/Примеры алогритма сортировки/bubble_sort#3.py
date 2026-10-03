@@ -1,10 +1,12 @@
 # Третья версия алгоритма
 
+
 def main():
     a_list = [2, 6, 9, 20, 3, 56, 55, 12, 36]
-    print(f'До:\n{a_list}')
+    print(f"До:\n{a_list}")
     sort = buble_sort(a_list)
-    print(f'После:\n{sort}')
+    print(f"После:\n{sort}")
+
 
 # Определение/вызов функции
 def buble_sort(a_list):
@@ -12,9 +14,9 @@ def buble_sort(a_list):
     # он будет управлять кол-вом итераций цикла
     list_lenght = len(a_list) - 1
     # Внешний цикл запускает алгоритм и не дает преждевременно ему завершится
-    for i in range(list_lenght):  
-        # Установка флага отслеживания цикла   
-        no_swaps = True           
+    for i in range(list_lenght):
+        # Установка флага отслеживания цикла
+        no_swaps = True
         # Внутренний цикл сравнивает элементы друг с другом
         # -i в алгоритме позволяет убрать лишние итерации, когда значения уже на своих местах, это ускорят сам алгоритм и завершает внутренний цикл раньше
         for j in range(list_lenght - i):
@@ -29,7 +31,6 @@ def buble_sort(a_list):
         if no_swaps:
             return a_list
 
-    
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

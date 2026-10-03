@@ -6,13 +6,13 @@ DATA_LIST = "Главы книги/Глава 7 - Списки и кортежи
 def main():
     values = calculate_total()
     save_file = save_list_to_file(values)
-    print(f'Доход за неделю составил: {values} руб')
+    print(f"Доход за неделю составил: {values} руб")
 
 
 def calculate_total():
     total_value = 0.0
     for day in range(1, DAYS + 1):
-        values = float(input(f'Введите доход за день {day}: '))
+        values = float(input(f"Введите доход за день {day}: "))
         total_value += values
     return total_value
 

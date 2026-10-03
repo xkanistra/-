@@ -17,12 +17,12 @@ def get_words(str_file):
     words = str_file.split()
     total_words = len(words)
 
-    raw_sentences = str_file.split('.')
+    raw_sentences = str_file.split(".")
     sentences = [s.strip() for s in raw_sentences if s.strip()]
 
     total_sentences = len(sentences)
     avg_words = total_words / total_sentences
-    print(f'{total_words} \n {avg_words:.2f}')
+    print(f"{total_words} \n {avg_words:.2f}")
 
 
 if __name__ == "__main__":

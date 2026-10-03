@@ -29,4 +29,3 @@ class Customer:
     # Вернуть номер телефона
     def get_phone(self):
         return self.__phone
-    

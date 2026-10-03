@@ -1,6 +1,6 @@
 import plant
 
-p = plant.Plant('саженец')
+p = plant.Plant("саженец")
 t = plant.Tree()
 p.message()
 t.message()

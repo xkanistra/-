@@ -7,7 +7,7 @@ attempts = 0
 while True:
     guess = int(input("Ваше число: "))
     attempts += 1
-    
+
     if guess == secret:
         print(f"Угадал за {attempts} попыток!")
         break

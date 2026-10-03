@@ -34,8 +34,8 @@ turtle.setheading(EAST)
 turtle.showturtle()
 turtle.speed(PROJECTILE_SPEED)
 
-angle = float(input('Введите угол выстрела снаряда: '))
-force = float(input('Введите пусковую силу снаряда (1-10): '))
+angle = float(input("Введите угол выстрела снаряда: "))
+force = float(input("Введите пусковую силу снаряда (1-10): "))
 
 disctance = force * FORCE_FACTOR
 
@@ -44,24 +44,29 @@ turtle.setheading(angle)
 turtle.pendown()
 turtle.forward(disctance)
 
-if (turtle.xcor() >= TARGET_LEFT_X and turtle.xcor() <= (TARGET_LEFT_X + TARGET_WIDTH) and turtle.ycor() >= TARGET_LEFT_Y and turtle.ycor() <= (TARGET_LEFT_Y + TARGET_WIDTH)):
-    print('Цель поражена!')
+if (
+    turtle.xcor() >= TARGET_LEFT_X
+    and turtle.xcor() <= (TARGET_LEFT_X + TARGET_WIDTH)
+    and turtle.ycor() >= TARGET_LEFT_Y
+    and turtle.ycor() <= (TARGET_LEFT_Y + TARGET_WIDTH)
+):
+    print("Цель поражена!")
 else:
-    print('Вы промахнулись!')
+    print("Вы промахнулись!")
 
 if angle < 64 and force < 9.4:
-    print('Попробуйте угол и силу побольше')
+    print("Попробуйте угол и силу побольше")
 if angle > 68 and force > 9.8:
-    print('Попробуйте угол и силу поменьше')
+    print("Попробуйте угол и силу поменьше")
 
 if angle < 64 and force >= 9.4 and force <= 9.8:
-    print('Попробуйте угол побольше') 
+    print("Попробуйте угол побольше")
 if angle > 68 and force >= 9.4 and force <= 9.8:
-    print('Попробуйте угол поменьше') 
+    print("Попробуйте угол поменьше")
 
 if angle > 64 and angle < 68 and force < 9.4:
-    print('Попробуйте силу побольше') 
+    print("Попробуйте силу побольше")
 if angle > 64 and angle < 68 and force > 9.8:
-    print('Попробуйте силу поменьше') 
-    
+    print("Попробуйте силу поменьше")
+
 turtle.done()

@@ -4,13 +4,14 @@ def main():
     n = 51
     search = linear_search(a_list, n)
     print(search)
+
+
 def linear_search(a_list, n):
     for i in a_list:
         if i == n:
             return True
     return False
-    
-    
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

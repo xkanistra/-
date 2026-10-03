@@ -4,16 +4,18 @@ def main():
     main_menu()
     input_selection()
 
+
 # Функция создающая меню.
 def main_menu():
     print("~" * 3, "МЕНЮ", "~" * 3)
     print("1. Температура")
     print("2. Длинна")
 
+
 # Функция выбора действия.
 def input_selection():
     selection = int(input("Выберите необходимую единицу для конвертации: "))
-    
+
     if selection == 1:
         print("a. C -> F")
         print("b. F -> C")
@@ -51,5 +53,5 @@ def input_selection():
     else:
         print("ОШИБКА! Неверный тип конвертации")
 
-main()
 
+main()

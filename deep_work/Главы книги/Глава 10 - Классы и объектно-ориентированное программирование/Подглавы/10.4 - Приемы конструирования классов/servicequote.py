@@ -1,6 +1,7 @@
 # Константа для вставки налога с продаж
 TAX_RATE = 0.05
 
+
 # Класс ServiceQuote
 class ServiceQuote:
     # Инициализировать объекта класса
@@ -30,6 +31,8 @@ class ServiceQuote:
 
     # Получить оценочная стоимость расходов
     def get_total_charges(self):
-        return self.__parts_charges + self.__labor_charges + (self.__parts_charges * TAX_RATE)
-
-    
+        return (
+            self.__parts_charges
+            + self.__labor_charges
+            + (self.__parts_charges * TAX_RATE)
+        )

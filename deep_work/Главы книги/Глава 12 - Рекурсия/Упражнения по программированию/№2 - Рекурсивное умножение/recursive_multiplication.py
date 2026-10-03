@@ -12,4 +12,5 @@ def rec_multiplic(x, y):
         print(y)
         rec_multiplic(x - 1, y)
 
+
 main()

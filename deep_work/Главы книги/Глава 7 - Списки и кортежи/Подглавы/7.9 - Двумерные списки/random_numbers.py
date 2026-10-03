@@ -4,12 +4,12 @@ import random
 # Константы строк и столбцов
 ROW = 3
 COLS = 4
+
+
 def main():
     # Список
-    value = [[0, 0, 0, 0],
-             [0, 0, 0, 0],
-             [0, 0, 0, 0]]
-    
+    value = [[0, 0, 0, 0], [0, 0, 0, 0], [0, 0, 0, 0]]
+
     # Заполнить списки случайными числами
     for r in range(ROW):
         for c in range(COLS):
@@ -17,6 +17,6 @@ def main():
 
     print(value)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()
-             

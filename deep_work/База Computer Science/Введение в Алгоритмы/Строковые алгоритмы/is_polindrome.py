@@ -1,7 +1,7 @@
 # Алгоритм поиска полиндрома
 # Сложность O(n)
 def main():
-    str1 = 'оЛо' 
+    str1 = "оЛо"
     polidrome = is_polidrome(str1)
     print(polidrome)
 
@@ -13,5 +13,6 @@ def is_polidrome(s1):
         return True
     return False
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

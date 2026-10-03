@@ -9,7 +9,7 @@ def main():
     rec_list(max_list)
     print()
     print(max_list)
-    
+
 
 def rec_list(a_list):
     if len(a_list) == 1:

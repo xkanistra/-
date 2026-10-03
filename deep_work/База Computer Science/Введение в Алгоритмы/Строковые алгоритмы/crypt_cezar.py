@@ -2,11 +2,13 @@
 
 import string
 
+
 def main():
-    str1 = 'I love Liza four year'
-    key = int(input('Введите смещение: '))
+    str1 = "I love Liza four year"
+    key = int(input("Введите смещение: "))
     encrypt = cipher(str1, key)
     print(encrypt)
+
 
 # Функция принимает строку и ключ для смещения
 def cipher(a_string, key):
@@ -14,7 +16,7 @@ def cipher(a_string, key):
     uppercase = string.ascii_uppercase
     lowercase = string.ascii_lowercase
     # Пустое значение которое будет принимать шифр
-    encrypt = ''
+    encrypt = ""
     # Читаем каждую букву из текста
     for c in a_string:
         # Если есть буква из текста в алфавите в нижнем/верхнем регистре то:
@@ -32,5 +34,6 @@ def cipher(a_string, key):
             encrypt += c
     return encrypt
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

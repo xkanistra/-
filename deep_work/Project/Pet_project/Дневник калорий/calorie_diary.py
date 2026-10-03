@@ -4,20 +4,24 @@ GOAL = 3000
 
 
 def main():
-    found = 'д'
-    while found == 'д' or found == 'Д':
+    found = "д"
+    while found == "д" or found == "Д":
         choise = display()
         if choise == 1:
             date = input("Введите дату (ДД.ММ.ГГ): ")
             calories = get_calories()
             get_print_report(date, calories, GOAL)
             get_save_file(date, calories, GOAL)
-            found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
-            
+            found = input(
+                "Желаете продолжить? Введите д/Д если да, остальное завершит программу: "
+            )
+
         elif choise == 2:
             load_last_report()
-            found = input('Желаете продолжить? Введите д/Д если да, остальное завершит программу: ')
-            
+            found = input(
+                "Желаете продолжить? Введите д/Д если да, остальное завершит программу: "
+            )
+
         else:
             print("Программа законченна")
             break
@@ -63,7 +67,11 @@ def get_print_report(date, calories, goal):
 
 # Сохранение данных в файле
 def get_save_file(date, calories, goal):
-    with open(r"Project/Pet_project/Дневник калорий/calories_history.txt", "a", encoding="utf-8") as save_file:
+    with open(
+        r"Project/Pet_project/Дневник калорий/calories_history.txt",
+        "a",
+        encoding="utf-8",
+    ) as save_file:
         if calories < goal:
             save_file.write(f"{date} | {calories} ккал | Ниже нормы\n")
         elif calories > goal:
@@ -75,9 +83,14 @@ def get_save_file(date, calories, goal):
 
 # Открытие файла для чтения
 def load_last_report():
-    with open(r"Project/Pet_project/Дневник калорий/calories_history.txt", "r", encoding="utf-8") as save_file:
+    with open(
+        r"Project/Pet_project/Дневник калорий/calories_history.txt",
+        "r",
+        encoding="utf-8",
+    ) as save_file:
         line = save_file.read()
         print(line)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     main()

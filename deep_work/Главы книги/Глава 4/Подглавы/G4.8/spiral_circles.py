@@ -2,10 +2,10 @@
 import turtle
 
 # Именованный константы
-NUM_CIRCLES = 36        # Кол-во кругов
-RADIUS = 100            # Радиус кругов
-ANGLE = 10            # Угол поворота
-ANIMATION_SPEED = 0     # Скорость анимации
+NUM_CIRCLES = 36  # Кол-во кругов
+RADIUS = 100  # Радиус кругов
+ANGLE = 10  # Угол поворота
+ANIMATION_SPEED = 0  # Скорость анимации
 
 # Задать скорость анимации
 turtle.speed(ANIMATION_SPEED)

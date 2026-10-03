@@ -60,7 +60,7 @@ def main():
     )
     drawArms(LEFT_ARM_X, LEFT_ARM_Y, END_X, END_Y)
     drawArms(RIGHT_ARM_X, RIGHT_ARM_Y, RIGHT_X, RIGHT_Y)
-    drawHat(X_HAT, Y_HAT, ANGLE, 'black')
+    drawHat(X_HAT, Y_HAT, ANGLE, "black")
 
 
 def drawBaze(x, y, radius):
@@ -125,5 +125,7 @@ def drawHat(x, y, angle, color):
     turtle.forward(30)
     turtle.left(angle)
     turtle.end_fill()
+
+
 main()
 turtle.done()

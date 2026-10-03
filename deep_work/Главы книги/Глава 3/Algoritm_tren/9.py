@@ -7,4 +7,3 @@ if turtle.pencolor() == "red" or turtle.pencolor() == "blue":
     turtle.pensize(5)
 turtle.forward(200)
 turtle.done()
-

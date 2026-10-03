@@ -5,10 +5,10 @@
 DAY = 7
 
 # Запрос недельного бюджета
-week_budget = float(input('Введите ваш недельный лимит: '))
+week_budget = float(input("Введите ваш недельный лимит: "))
 
 # Расчет предпологаемого недельного расхода для
-# дальнейшего сравнения с фактичеким расходом 
+# дальнейшего сравнения с фактичеким расходом
 expences_day = week_budget / 7
 
 # Накапливающая переменная для расчета итоговых расходов
@@ -20,7 +20,7 @@ overrun = 0
 # Цикл расчитывающий сумму трат на каждый день недели
 for day in range(DAY):
     # Ввод пользователем фактических трат в день
-    fact_expences_day = float(input(f'День {day + 1}: '))
+    fact_expences_day = float(input(f"День {day + 1}: "))
 
     # Расчет итоговых трат
     total_expences += fact_expences_day
@@ -33,15 +33,17 @@ for day in range(DAY):
 average_week = total_expences / 7
 
 # Вывод итогов
-print(f'Ваш недельный бюджет: {week_budget:,.2f} рублей\n'
-      f'Дневной лимит: {expences_day:,.2f} рублей\n'
-      f'Итого потраченно: {total_expences:,.2f} рублей\n'
-      f'Итого потраченно фактически: {average_week:,.2f} рублей\n'
-      f'Дней с перерасходом: {overrun} дней')
+print(
+    f"Ваш недельный бюджет: {week_budget:,.2f} рублей\n"
+    f"Дневной лимит: {expences_day:,.2f} рублей\n"
+    f"Итого потраченно: {total_expences:,.2f} рублей\n"
+    f"Итого потраченно фактически: {average_week:,.2f} рублей\n"
+    f"Дней с перерасходом: {overrun} дней"
+)
 
 # Условие уложился ли пользователь в свой бюджет
 if total_expences <= week_budget:
-    print('Отлично! Вы уложились в бюджет.')
+    print("Отлично! Вы уложились в бюджет.")
 else:
     total_week = total_expences - week_budget
-    print(f'Внимание! Перерасход на {total_week:,.2f} рублей.')
+    print(f"Внимание! Перерасход на {total_week:,.2f} рублей.")

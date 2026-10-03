@@ -25,7 +25,7 @@ def is_prime(n):
         return True
 
 
-# Функция создает список через list compression 
+# Функция создает список через list compression
 # и возвращает список простых чисел
 def find_primes(n):
     return [i for i in range(2, n) if is_prime(i)]

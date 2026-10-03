@@ -1,5 +1,5 @@
-choice = 'д'
-if choice.upper() == 'Д':
-    print('Выбор есть')
+choice = "д"
+if choice.upper() == "Д":
+    print("Выбор есть")
 else:
-    print('Выбора нет')
+    print("Выбора нет")

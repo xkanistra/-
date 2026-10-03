@@ -3,10 +3,12 @@ class Beverage:
         self.__bev_name = bev_name
 
     def message(self):
-        print(f'Я - {self.__bev_name}')
+        print(f"Я - {self.__bev_name}")
+
+
 class Cola(Beverage):
     def __init__(self, bev_name):
-        Beverage.__init__(self, 'кока-кола')
+        Beverage.__init__(self, "кока-кола")
 
     def message(self):
-        print('Я - кока-кола')
+        print("Я - кока-кола")

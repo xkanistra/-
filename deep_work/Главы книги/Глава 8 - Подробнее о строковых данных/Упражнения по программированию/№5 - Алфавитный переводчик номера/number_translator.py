@@ -2,13 +2,13 @@
 # в числовой
 NUM_TUPLE = (
     ("2", "A", "B", "C"),
-    ("3", "D", "E", "F"), 
+    ("3", "D", "E", "F"),
     ("4", "G", "H", "I"),
-    ("5", "J", "K", "L"), 
+    ("5", "J", "K", "L"),
     ("6", "M", "N", "O"),
     ("7", "P", "Q", "R", "S"),
     ("8", "T", "U", "V"),
-    ("9", "W", "X", "Y", "Z")
+    ("9", "W", "X", "Y", "Z"),
 )
 
 
@@ -26,7 +26,7 @@ def translate_number(number):
     result = []
     for item in number:
         ch = item.upper()
-        if item == '-':
+        if item == "-":
             result.append(item)
         else:
             for group in NUM_TUPLE:
@@ -34,7 +34,7 @@ def translate_number(number):
                     result.append(group[0])
                     break
 
-    print(''.join(result))
+    print("".join(result))
 
 
 if __name__ == "__main__":
