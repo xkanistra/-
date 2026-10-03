@@ -16,4 +16,5 @@ def rec_print(start, end):
         rec_print(start + 1, end)
 
 
-main()
+if __name__ == "__main__":
+    main()

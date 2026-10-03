@@ -15,4 +15,5 @@ def rec_sum(start, end):
     return start + end + rec_sum(start + 1, end - 1)
 
 
-main()
+if __name__ == "__main__":
+    main()

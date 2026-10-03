@@ -13,4 +13,5 @@ def rec_multiplic(x, y):
         rec_multiplic(x - 1, y)
 
 
-main()
+if __name__ == "__main__":
+    main()

@@ -9,10 +9,10 @@ def main():
     result = random_num1 + random_num2
     total = int(input("Введите ответ: "))
     if total != result:
-        print(f"Ответ неверный.")
+        print("Ответ неверный.")
         print(f"Правильный ответ: {result}")
     else:
-        print(f"Поздравляем, вы ответили верно!")
+        print("Поздравляем, вы ответили верно!")
         print(f"{result}")
 
 
@@ -33,4 +33,5 @@ def get_random_num2():
     return result
 
 
-main()
+if __name__ == "__main__":
+    main()

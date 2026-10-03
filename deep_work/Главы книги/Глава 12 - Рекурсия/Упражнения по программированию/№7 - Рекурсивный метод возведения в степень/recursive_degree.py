@@ -18,4 +18,5 @@ def rec_degree(num, degr):
         return num * rec_degree(num, degr - 1)
 
 
-main()
+if __name__ == "__main__":
+    main()

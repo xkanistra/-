@@ -13,4 +13,5 @@ def rec_str(start, end):
         rec_str(start + 1, end)
 
 
-main()
+if __name__ == "__main__":
+    main()

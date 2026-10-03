@@ -31,4 +31,5 @@ def rec_list(a_list):
         rec_list(a_list)
 
 
-main()
+if __name__ == "__main__":
+    main()

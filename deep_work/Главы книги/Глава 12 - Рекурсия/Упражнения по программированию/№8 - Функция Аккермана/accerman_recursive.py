@@ -16,4 +16,5 @@ def accerman_func(m, n):
         return accerman_func(m - 1, accerman_func(m, n - 1))
 
 
-main()
+if __name__ == "__main__":
+    main()
